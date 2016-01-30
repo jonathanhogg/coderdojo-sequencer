@@ -1,0 +1,81 @@
+# Touch-controlled music sequencer
+
+require 'socket'
+
+NUM_PADS = 12
+NUM_BEATS = 4
+NUM_SUB_BEATS = 8
+TOTAL_SUB_BEATS = NUM_BEATS * NUM_SUB_BEATS
+SUB_BEAT_DURATION = 1.0 / NUM_SUB_BEATS
+
+COLORS = ring(0xff0000, 0x888800, 0x00ff00, 0x008888, 0x0000ff, 0x880088)
+
+NOTES = scale(:c3, :major)
+
+SAMPLES = [:bd_haus, :sn_dolf, :perc_snap, :perc_snap2, :elec_cymbal, :elec_triangle]
+
+
+pattern = Array.new(NUM_PADS) { Array.new(TOTAL_SUB_BEATS, false) }
+sub_beat = 0
+
+
+def trigger(number)
+  with_fx :wobble do
+    use_synth :sine
+    use_synth_defaults amp: 2, sustain: SUB_BEAT_DURATION
+    if number < 6
+      play NOTES[number]
+    elsif number >= 6
+      sample SAMPLES[number - 6]
+    end
+  end
+end
+
+
+live_loop :sequencer do
+  loop do
+    if sub_beat % NUM_SUB_BEATS == 0
+      sample :elec_tick, amp: 0.5
+    end
+    played = false
+    for number in 0..NUM_PADS-1
+      if pattern[number][sub_beat]
+        trigger number
+        played = true
+      end
+    end
+    if played
+      cue :light, :color, COLORS.tick
+    end
+    sub_beat = (sub_beat + 1) % TOTAL_SUB_BEATS
+    sleep SUB_BEAT_DURATION
+  end
+end
+
+
+live_loop :pads do
+  loop do
+    message = sync :pad
+    number = message[:number]
+    pattern[number][sub_beat] = true
+  end
+end
+
+
+live_loop :lights do
+  client = UDPSocket.new
+  client.connect "localhost", 9000
+
+  loop do
+    message = sync :light
+    if message[:color]
+      client.send "color " + message[:color].to_s(16), 0
+    end
+    if message[:tilt]
+      client.send "tilt " + message[:tilt].to_s, 0
+    end
+    if message[:pan]
+      client.send "pan " + message[:pan].to_s, 0
+    end
+  end
+end
