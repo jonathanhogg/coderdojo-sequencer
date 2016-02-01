@@ -4,7 +4,7 @@ import socket
 
 
 wash = dmx.EuroliteMovingHeadWash(base=1, color=(1, 1, 1), intensity=1)
-controller = dmx.DMXController(debug=True, fixtures=[wash])
+controller = dmx.DMXController(debug=True, fixtures=[wash], port='/dev/tty.usbmodem1421')
 controller.enabled = True
 
 server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
