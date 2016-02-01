@@ -1,7 +1,7 @@
 # coderdojo-sequencer
 CoderDojo Sonic Pi/Bare Touch music sequencer
 
-This code was used in the CoderDojo Glasgow Science Museum workshops of
+This code was used in the CoderDojo Glasgow Science Centre workshops of
 Saturday 30 Feb 2016.
 
 The Arduino code for the Bare Touch board is in `touchpad`, the Python
