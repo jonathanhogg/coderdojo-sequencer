@@ -34,7 +34,7 @@ For the Disco Light
 ##Control Pad
 We're going to start by making the Control Pad for our sequencer - mainly because it's going to take a while for the paint to dry.
 
-[Control Pad Instructions](http://glasgow.coderdojo.co/DigitalDJ/ControlPad.md)
+[Control Pad Instructions](./ControlPad.md)
 
 #Sequencer
 ### What is a Sequencer?
