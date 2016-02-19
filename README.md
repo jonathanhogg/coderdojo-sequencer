@@ -8,7 +8,7 @@ Here's a link to a [short video](https://www.facebook.com/CoderdojoScotland/vide
  of the workshop on the day.
 
 ##Licence
-This work is licensed under the following [License](./LICENSE.md)
+This work is licensed under the following [License](./LICENSE)
 
 # Equipment
 
