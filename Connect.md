@@ -137,7 +137,7 @@ Attach one end of a crocodile clip to the first of the 12 large gold electrodes 
 
 Remove the USB connection from the computer and then reattach it - this allows the Touch Board to recallibrate for the larger area of the painted control pads.  Give it 10 seconds or so to callibrate and then try out adding sounds by touching the painted pads.
 
-Your sequencer is now finished!  Enjoy making some killer beats with it, or add some [extra features]([TouchBoard Instructions](http://glasgow.coderdojo.co/DigitalDJ/Extras.md)
+Your sequencer is now finished!  Enjoy making some killer beats with it, or add some [extra features](./Extras.md)
 .
 
 
