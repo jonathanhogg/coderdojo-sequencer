@@ -12,6 +12,6 @@ Once you're happy with your shapes paint them in with the Bare Conductive paint.
 
 You can connect the pads to the edge of the page with painted lines of Bare Conductive, or use the squeezy tube of paint that comes with the kits, which is easier to do more delicate work with.
 
-Leave the control pads to dry while you do the next part: [setting up the sequencer]([TouchBoard Instructions](http://glasgow.coderdojo.co/DigitalDJ/Sequencer.md)
+Leave the control pads to dry while you do the next part: [setting up the sequencer](./Sequencer.md).
 .
 
