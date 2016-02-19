@@ -42,11 +42,11 @@ We're going to start by making the Control Pad for our sequencer - mainly becaus
 The loop pedal that musicians like KT Tunstall and Ed Sheeran use is essentially a sequencer.  It plays a loop of sounds that you can add to while it's playing:
 
 
-[![KT Tunstall Loop pedal video](./tunstall.jpg)](https://www.youtube.com/watch?v=r7XIQ_6J2do)
+[![KT Tunstall Loop pedal video](http://glasgow.coderdojo.co/DigitalDJ/tunstall.jpg)](https://www.youtube.com/watch?v=r7XIQ_6J2do)
 
 Loop pedals record the sound live and add it in, but we're going to use some sounds and samples that are already provided with Sonic Pi.
 
-[Sequencer Instructions](http://glasgow.coderdojo.co/DigitalDJ/Sequencer.md)
+[Sequencer Instructions](Sequencer.md)
 
 
 
@@ -57,13 +57,13 @@ Next we want to connect the sequencer to the Control Pad (assuming it has dried 
 
 The Touch Board uses capacitative touch, a method that uses the electrical conductivity of the human body, to tell whether or not someone is touching its sensors.  Capacitative touch is also the method used by touchscreens in mobile phones.
 
-[TouchBoard Instructions](http://glasgow.coderdojo.co/DigitalDJ/Connect.md)
+[TouchBoard Instructions](Connect.md)
 
 
 
 ## Extra Stuff
 
-[Additional features you could add](http://glasgow.coderdojo.co/DigitalDJ/Extras.md)
+[Additional features you could add](Extras.md)
 
 
 
