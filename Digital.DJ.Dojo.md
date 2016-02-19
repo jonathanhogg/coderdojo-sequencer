@@ -46,7 +46,7 @@ The loop pedal that musicians like KT Tunstall and Ed Sheeran use is essentially
 
 Loop pedals record the sound live and add it in, but we're going to use some sounds and samples that are already provided with Sonic Pi.
 
-[Sequencer Instructions](Sequencer.md)
+[Sequencer Instructions](./Sequencer.md)
 
 
 
@@ -57,13 +57,13 @@ Next we want to connect the sequencer to the Control Pad (assuming it has dried 
 
 The Touch Board uses capacitative touch, a method that uses the electrical conductivity of the human body, to tell whether or not someone is touching its sensors.  Capacitative touch is also the method used by touchscreens in mobile phones.
 
-[TouchBoard Instructions](Connect.md)
+[TouchBoard Instructions](./Connect.md)
 
 
 
 ## Extra Stuff
 
-[Additional features you could add](Extras.md)
+[Additional features you could add](./Extras.md)
 
 
 
