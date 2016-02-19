@@ -6,11 +6,11 @@ Add more of an element of [live-coding](https://en.wikipedia.org/wiki/Live_codin
 You may already have changed the sounds and samples in `NOTES` and `SEQUENCES`, but you can also change the synth being used and the effects by changing the code in the Trigger function, e.g.:
 
 
-![synth and effects 1](./synth1.png)
+![synth and effects 1](http://glasgow.coderdojo.co/DigitalDJ/synth1.png)
 
 or 
 
-![synth and effects 2](./synth2.png)
+![synth and effects 2](http://glasgow.coderdojo.co/DigitalDJ/synth2.png)
 
 Just edit the code and press Run again to update the sounds without stopping the music.
 
