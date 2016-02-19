@@ -56,6 +56,6 @@ uncomment another line, and press Run again.  You should be able to hear another
 
 The sounds that make up our sequencer are kept in two arrays: `NOTES` which contains 6 notes and `SAMPLES`, containing 6 samples.  If you like you can change the notes or samples - for example you might want a more "space-themed" sequencer and add some of the ambient sound samples like `:ambi_lunar_land` instead of the drum-based ones.
 
-Next, we need to [Connect the Control Pad to the Sequencer]([TouchBoard Instructions](http://glasgow.coderdojo.co/DigitalDJ/Connect.md)
+Next, we need to [Connect the Control Pad to the Sequencer]([./Connect.md)
 .
 
