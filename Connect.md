@@ -6,7 +6,7 @@ First download and setup the Arduino software needed to run the Touch Board - al
 
 &nbsp;
 
-![switch touch board on](./boardon.JPG)
+![switch touch board on](http://glasgow.coderdojo.co/DigitalDJ/boardon.JPG)
 
 &nbsp;
 
@@ -17,7 +17,7 @@ Next select the Tools menu in Arduino and select "Bare Conductive Touch Board" f
 
 &nbsp;
 
-![set touch board ](./setboard.png)
+![set touch board ](http://glasgow.coderdojo.co/DigitalDJ/setboard.png)
 &nbsp;
 
 &nbsp;
@@ -25,7 +25,7 @@ Next select the Tools menu in Arduino and select "Bare Conductive Touch Board" f
 
 Finally, still in the Tools menu, select the Bare Conductive Touch Board entry from the list of devices connected to Serial Ports.
 
-![set touch board address](./setboardaddr.png)
+![set touch board address](http://glasgow.coderdojo.co/DigitalDJ/setboardaddr.png)
 &nbsp;
 
 &nbsp;
@@ -43,7 +43,7 @@ To get this code onto your Touch Board, go to the Sketch menu at the top of the 
 
 &nbsp;
 
-[![Compile pic](./compile.png)]
+[![Compile pic](http://glasgow.coderdojo.co/DigitalDJ/compile.png)]
 
 &nbsp;
 
@@ -53,7 +53,7 @@ To get this code onto your Touch Board, go to the Sketch menu at the top of the 
 
 &nbsp;
 
-[![Upload pic](./upload.png)]
+[![Upload pic](http://glasgow.coderdojo.co/DigitalDJ/upload.png)]
 &nbsp;
 
 &nbsp;
@@ -64,7 +64,7 @@ Our Bare Touch board is able to detect whether any of its inputs are touched and
 To do this we set up a *socket* between the Arduino program running on the Touch board and Sonic Pi running on our main computer.  A socket is a channel that allows us to send messages to a program running on a network.  (In this instance it's the very small network made up of our Bare Touch board and our computer).
 
 
-![touchpad listener program](./listener.png)
+![touchpad listener program](http://glasgow.coderdojo.co/DigitalDJ/listener.png)
 
 The Python code in touchpad_listener.py reads the messages from the Bare Touch board and translates them into Open Sound Control messages which Sonic Pi can understand.  So, for example, the message 
 
@@ -84,7 +84,7 @@ Open the listener program `touchpad_listener.py` in an editor and edit the line
 
 &nbsp;
 
-[![connection](./listener_addr.png)]
+[![connection](http://glasgow.coderdojo.co/DigitalDJ/listener_addr.png)]
 &nbsp;
 
 &nbsp;
@@ -93,7 +93,7 @@ so that the device string in yellow here matches the address of your Touch Board
 &nbsp;
 
 &nbsp;
-![set touch board address](./setboardaddr.png)
+![set touch board address](http://glasgow.coderdojo.co/DigitalDJ/setboardaddr.png)
 
 &nbsp;
 
