@@ -1,5 +1,3 @@
-# coderdojo-sequencer
-CoderDojo Sonic Pi/Bare Touch music sequencer
 
 # CoderDojo Sonic Pi/Bare Touch music sequencer
 A Sonic Pi music sequencer with conductive-paint, touch-sensitive control pads.   
@@ -10,7 +8,7 @@ Here's a link to a [short video](https://www.facebook.com/CoderdojoScotland/vide
  of the workshop on the day.
 
 ##Licence
-This work is licensed under an [License] ()
+This work is licensed under the following [License](./LICENSE.md)
 
 # Equipment
 
