@@ -60,8 +60,6 @@ The Touch Board uses capacitative touch, a method that uses the electrical condu
 
 [TouchBoard Instructions](./Connect.md)
 
-
-
 ## Extra Stuff
 
 [Additional features you could add](./Extras.md)
