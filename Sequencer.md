@@ -27,7 +27,7 @@ In order to get more sounds into our loop and test that our sequencer is working
 
 In Sonic Pi the live_loop command allows you to set a loop going that you can edit while it's playing.  To update the music playing just hit **Run** again.  
 
-We can also have code running in more than one buffer at the same time (which can sound bizarre if you do it by accident).
+We can also have code running in more than one buffer at the same time, which can sound bizarre if you do it by accident but it's going to be useful here.
 
 If you uncomment a line from TestLooper.txt in **Buffer 1** (remove the # symbol from the start of the line) and press **Run** again you should hear that a sound has been added to the tick-tick-tick sound.  
 
