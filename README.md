@@ -66,6 +66,10 @@ The Touch Board uses capacitative touch, a method that uses the electrical condu
 
 [Additional features you could add](./Extras.md)
 
+## Authors 
+[Jonathan Hogg](http://www.jonathanhogg.com/) <br/>
+[Claire Quigley](https://github.com/alcluith) <br/>
+
 
 
 
