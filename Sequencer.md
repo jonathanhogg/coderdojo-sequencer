@@ -10,7 +10,7 @@ Once we have everything set up we're going to add sounds using the control pads 
 
 If you press **Run** from **Buffer 0** you'll hear a ticking sound - like a metronome, or clicktrack that musicians use to keep time when they're making recordings.  This is our looper program running, as you can hear, there's not anything in the loop yet.
 
-Each tick is the start of a beat and we're going to divide each beat into 4 subbeats. 
+Each tick is the start of a beat and we're going to divide each beat into 4 sub-beats. 
 
 Think of our looper as an empty grid.  Each box represents a sub-beat and to start with each box in the grid is empty.  We want to fill it up with sounds, like in the diagram below:
 
