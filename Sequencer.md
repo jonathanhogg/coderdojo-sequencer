@@ -2,13 +2,13 @@
 
 Make sure your computer has Sonic Pi installed (if not, you can download it free here: http://www.sonic-pi.net).  We're using version 2.9 here.
 
-Open Sonic Pi and copy and paste the contents of the file coderdojo-sequencer/sequencer/complete.txt into **Buffer 0**.
+Open Sonic Pi and copy and paste the contents of the file `coderdojo-sequencer/sequencer/complete.txt` into **Buffer 0**.
 
 Once we have everything set up we're going to add sounds using the control pads we've painted.  But we can test it's working and we're happy with it using another small program in the same folder as Complete.txt.  This one is called TestLooper.txt - copy and paste it into **Buffer 1** in Sonic Pi.
 
 ### Run the Sequencer
 
-If you press Run from **Buffer 0** you'll hear a ticking sound - like a metronome, or clicktrack that musicians use to keep time when they're making recordings.  This is our looper program running, as you can hear, there's not anything in the loop yet.
+If you press **Run** from **Buffer 0** you'll hear a ticking sound - like a metronome, or clicktrack that musicians use to keep time when they're making recordings.  This is our looper program running, as you can hear, there's not anything in the loop yet.
 
 Each tick is the start of a beat and we're going to divide each beat into 4 subbeats. 
 
@@ -25,11 +25,11 @@ Here each shape filled in on the grid represents a sound being played at that su
 In order to get more sounds into our loop and test that our sequencer is working okay before we hook up the control pad, we're going to use the commands `live_loop`, `sync`, and `cue`.
 
 
-In Sonic Pi the live_loop command allows you to set a loop going that you can edit while it's playing.  To update the music playing just hit Run again.  
+In Sonic Pi the live_loop command allows you to set a loop going that you can edit while it's playing.  To update the music playing just hit **Run** again.  
 
 We can also have code running in more than one buffer at the same time (which can sound bizarre if you do it by accident).
 
-If you uncomment a line from TestLooper.txt in **Buffer 1** (remove the # symbol from the start of the line) and press Run again you should hear that a sound has been added to the tick-tick-tick sound.  
+If you uncomment a line from TestLooper.txt in **Buffer 1** (remove the # symbol from the start of the line) and press **Run** again you should hear that a sound has been added to the tick-tick-tick sound.  
 
 For example, uncommenting:
 
