@@ -2,7 +2,7 @@
 # CoderDojo Sonic Pi/Bare Touch music sequencer
 A Sonic Pi music sequencer with conductive-paint, touch-sensitive control pads.   
 
-The code and workshop were developed by Jonathan Hogg for the CoderDojo Glasgow Science Centre workshops of Saturday 30 Feb 2016.  This README is an expanded description of the workshop with added diagrams, etc.
+The code and workshop were developed by [Jonathan Hogg](http://www.jonathanhogg.com/) for the CoderDojo Glasgow Science Centre Dojos of Saturday 30 Feb 2016.  This README is an expanded description of the workshop with added diagrams, etc.
 
 Here's a link to a [short video](https://www.facebook.com/CoderdojoScotland/videos/vb.209977582476439/683765638430962/?type=2&theater&notif_t=like)
  of the workshop on the day.
