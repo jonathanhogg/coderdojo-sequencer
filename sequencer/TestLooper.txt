@@ -1,0 +1,34 @@
+#
+# Touch-controlled music sequencer
+#
+
+#--------------------------------------------------------------------------
+# PART I: A pad-controlled piano/drum-machine
+#
+
+# We send a message to the sequencer with the `cue` function; the first
+# argument is the name of the cue being sent, the next two are the
+# message to send with the cue: a keyword and a value. We're using the
+# `:number` keyword and the pad number, 0..11, like so:
+#
+
+# Pads 0..5 are our piano keys
+#
+#cue :pad, :number, 0
+#cue :pad, :number, 1
+#cue :pad, :number, 2
+#cue :pad, :number, 3
+#cue :pad, :number, 4
+#cue :pad, :number, 5
+
+# Pads 6..11 are our drum machine pads
+#
+#cue :pad, :number, 6
+#cue :pad, :number, 7
+#cue :pad, :number, 8
+#cue :pad, :number, 9
+#cue :pad, :number, 10
+#cue :pad, :number, 11
+
+# Uncomment one or more of the lines above and then run this buffer
+# to tell the sequencer to play that/those sample/note(s).
