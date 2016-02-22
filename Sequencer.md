@@ -44,7 +44,9 @@ When live_loop :pads does get woken up by a `cue :pad`, it checks to see what nu
 
 [![loopsleeping animation](http://glasgow.coderdojo.co/DigitalDJ/Loop/sleepingloopshot.png)] (http://glasgow.coderdojo.co/DigitalDJ/Loop/sleepingloop.mp4)
 
-'&nbsp'
+&nbsp;
+
+&nbsp;
 
 Now put the comment symbol back at the start of the line
 
