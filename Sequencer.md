@@ -52,7 +52,7 @@ Now put the comment symbol back at the start of the line
 
 `cue :pad, :number, 11`
 
-uncomment another line, and press Run again.  You should be able to hear another sound has been added.  You can keep doing this till you get bored (or add a sound that makes it sound weird!)
+uncomment another line, and press **Run** again.  You should be able to hear another sound has been added.  You can keep doing this till you get bored (or add a sound that makes it sound weird!)
 
 ### Change the sounds of your Sequencer
 
