@@ -46,7 +46,7 @@ In our program `sync :pad` puts a `live_loop :pads` to sleep, and it can only be
 
 When live_loop :pads does get woken up by a `cue :pad`, it checks to see what number was attached to the sync command and puts this into the sequencer's grid of sounds at the sub-beat number it was at when it's woken. 
 
-![live_loop sleeping until it receives the right cue](http://glasgow.coderdojo.co/DigitalDJ/Loop/loopanimation.m4v "live_loop sleeping until it receives the right cue")
+![sleepingloopshot.png](http://glasgow.coderdojo.co/DigitalDJ/Loop/loopanimation.mp4 "live_loop sleeping until it receives the right cue")
 
 Now put the comment symbol back at the start of the line
 
