@@ -4,7 +4,7 @@ Make sure your computer has Sonic Pi installed (if not, you can download it free
 
 Open Sonic Pi and copy and paste the contents of the file `coderdojo-sequencer/sequencer/complete.txt` into **Buffer 0**.
 
-Once we have everything set up we're going to add sounds using the control pads we've painted.  But we can test it's working and we're happy with it using another small program in the same folder as Complete.txt.  This one is called TestLooper.txt - copy and paste it into **Buffer 1** in Sonic Pi.
+Once we have everything set up we're going to add sounds using the control pads we've painted.  But we can test it's working and we're happy with it using another small program in the same folder as `Complete.txt`.  This one is called `TestLooper.txt` - copy and paste it into **Buffer 1** in Sonic Pi.
 
 ### Run the Sequencer
 
