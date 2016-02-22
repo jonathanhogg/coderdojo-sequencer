@@ -40,11 +40,13 @@ means that the last sample in the SAMPLES array - `:elec_triangle` - will be add
 The `cue` command works a bit like a "wake up call" for live loops that have a matching `sync` call. 
 
 
-![live_loop sleeping until it receives the right cue](http://glasgow.coderdojo.co/DigitalDJ/sleepingloop.png "live_loop sleeping until it receives the right cue")
+![live_loop sleeping until it receives the right cue](http://glasgow.coderdojo.co/DigitalDJ/Loop/loopasleepsign.png "live_loop sleeping until it receives the right cue")
 
 In our program `sync :pad` puts a `live_loop :pads` to sleep, and it can only be woken by a `cue :pad` call.  (Here `:pad` is just a name for these particular cue and sync calls, just as `:pads` is the name of this particular `:live_loop`).
 
 When live_loop :pads does get woken up by a `cue :pad`, it checks to see what number was attached to the sync command and puts this into the sequencer's grid of sounds at the sub-beat number it was at when it's woken. 
+
+![live_loop sleeping until it receives the right cue](http://glasgow.coderdojo.co/DigitalDJ/Loop/loopanimation.m4v "live_loop sleeping until it receives the right cue")
 
 Now put the comment symbol back at the start of the line
 
