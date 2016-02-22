@@ -22,14 +22,9 @@ Here each shape filled in on the grid represents a sound being played at that su
 
 ### How do we get more sounds into our Loop?
 
-In order to get more sounds into our loop and test that our sequencer is working okay before we hook up the control pad, we're going to use the commands `live_loop`, `sync`, and `cue`.
+In order to get more sounds into our loop and test that our sequencer is working okay before we hook up the control pad, we're going to use the commands `live_loop`, `sync`, and `cue`.  In Sonic Pi the live_loop command allows you to set a loop going that you can edit while it's playing.  To update the music playing just hit **Run** again.  
 
-
-In Sonic Pi the live_loop command allows you to set a loop going that you can edit while it's playing.  To update the music playing just hit **Run** again.  
-
-We can also have code running in more than one buffer at the same time, which can sound bizarre if you do it by accident but it's going to be useful here.
-
-If you uncomment a line from TestLooper.txt in **Buffer 1** (remove the # symbol from the start of the line) and press **Run** again you should hear that a sound has been added to the tick-tick-tick sound.  
+We can also have code running in more than one buffer at the same time, which can sound bizarre if you do it by accident but it's going to be useful here.  If you uncomment a line from TestLooper.txt in **Buffer 1** (remove the # symbol from the start of the line) and press **Run** again you should hear that a sound has been added to the tick-tick-tick sound we got from pressing **Run** in **Buffer 0**.  
 
 For example, uncommenting:
 
@@ -47,8 +42,9 @@ In our program `sync :pad` puts a `live_loop :pads` to sleep, and it can only be
 When live_loop :pads does get woken up by a `cue :pad`, it checks to see what number was attached to the sync command and puts this into the sequencer's grid of sounds at the sub-beat number it was at when it's woken. 
 
 
-
 [![loopsleeping animation](http://glasgow.coderdojo.co/DigitalDJ/Loop/sleepingloopshot.png)] (http://glasgow.coderdojo.co/DigitalDJ/Loop/sleepingloop.mp4)
+
+'&nbsp'
 
 Now put the comment symbol back at the start of the line
 
