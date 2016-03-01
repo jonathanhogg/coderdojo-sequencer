@@ -119,12 +119,6 @@ and hit the Enter key.  As long as there are no errors you shouldn't see any res
 
 &nbsp;
 
-**On a PC**:
-
-
-&nbsp;
-
-&nbsp;
 
 
 Now press Run on Buffer 1 of Sonic Pi (our sequencer program).  Each time you touch one of the input sensors on the Touch Board a new sound should be added to the sequencer loop.
