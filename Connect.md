@@ -99,7 +99,7 @@ so that the device string in yellow here matches the address of your Touch Board
 
 
 
-On a Mac: open the LXTerminal program and navigate to the folder where `touchpad_listener.py` is saved (if you're not familiar with the terminal have a look at [this short and helpful tutorial](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) which will get you up to speed).  Now type 
+**On a Mac**: open the LXTerminal program and navigate to the folder where `touchpad_listener.py` is saved (if you're not familiar with the terminal have a look at [this short and helpful tutorial](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) which will get you up to speed).  Now type 
 
 `sudo python touchpad_listener.py` 
 
