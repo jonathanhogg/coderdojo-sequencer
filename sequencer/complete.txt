@@ -1,8 +1,9 @@
+#
 # Touch-controlled music sequencer
-
+#
 
 #--------------------------------------------------------------------------
-# PART I: The pad-controlled sequencer
+# PART II: The pad-controlled sequencer
 #
 
 # Configure various constants that we need, these define the number of
@@ -15,30 +16,36 @@ NUM_SUB_BEATS = 8
 TOTAL_SUB_BEATS = NUM_BEATS * NUM_SUB_BEATS
 SUB_BEAT_DURATION = 1.0 / NUM_SUB_BEATS
 
-# These are the 6 notes that we will play from the piano part of the pad
+
+# These are the 6 notes that we will play from the piano part of the pad.
+# You can change these to whatever you like.
 #
 NOTES = scale(:c3, :major)
 
-# These are the 6 samples that we will play from the drum part of the pad
+# These are the 6 samples that we will play from the drum part of the pad.
+# You can change these to whatever you like.
 #
-SAMPLES = [:bd_haus, :sn_dolf, :perc_snap, :perc_snap2, :elec_cymbal, :elec_triangle]
+SAMPLES = [:bd_haus, :sn_dolf, :perc_snap,
+           :perc_snap2, :elec_cymbal, :elec_triangle]
+
 
 # This function takes the number of the pad (0-11) as an argument and
 # either plays the appropriate note or the appropriate sample from the
 # ones above. You can change the synth and add effects in this function.
 #
 def trigger(number)
+  
+  # Setup sound effects and synthesizer defaults. You can play with
+  # changing these to whatever you like.
+  #
   with_fx :wobble do
     use_synth :sine
     use_synth_defaults amp: 2, sustain: SUB_BEAT_DURATION
-
+    
     if number < 6
-      # Play the right note from the NOTES variable
       play NOTES[number]
     elsif number >= 6
-      # Play the right sample from the SAMPLES variable, remember that
-      # the variable is indexed from 0..5 and that `number` is 6..11
-      sample SAMPLES[number - 6]
+      sample SAMPLES[number-6]
     end
   end
 end
@@ -63,6 +70,8 @@ live_loop :pads do
   loop do
     message = sync :pad
     number = message[:number]
+    print "pad number is: "
+    print number
     pattern[number][sub_beat] = true
   end
 end
@@ -73,15 +82,17 @@ end
 #
 live_loop :sequencer do
   loop do
+    
     # Play a metronome tick at the beginning of each beat, which is
     # every NUM_SUB_BEATS sub-beats
     #
     if sub_beat % NUM_SUB_BEATS == 0
-      sample :elec_tick, amp: 0.5
+      sample :elec_tick, amp: 0.7
     end
+    
     # Iterate through each of the pads checking to see if the pattern
-    # has a `true` value set for the current sub-beat. We remember
-    # in the `played` variable if we have played anything.
+    # has a `true` value set for the current sub-beat. We remember if
+    # we have played anything to control the light.
     #
     played = false
     for number in 0..NUM_PADS-1
@@ -89,18 +100,21 @@ live_loop :sequencer do
         # Play the appropriate sound and remember that we have played
         # something for later
         #
+        print "triggering number:"
+        print number
         trigger number
         played = true
       end
     end
-
+    
     # If we played something above, then tell the light to move to the
     # next colour from the COLORS ring (see below) using the tick method
     #
-    if played
-      cue :light, :color, COLORS.tick
-    end
-
+    ##| if played
+    ##|   cue :light, :color, COLORS.tick
+    ##| end
+    
+    
     # Move to the next sub-beat index and sleep for a single sub-beat
     #
     sub_beat = (sub_beat + 1) % TOTAL_SUB_BEATS
@@ -110,7 +124,7 @@ end
 
 
 #--------------------------------------------------------------------------
-# PART II: The *disco light*
+# PART III: The *disco light*
 #
 
 # We'll want this later for communicating with the disco light
@@ -127,20 +141,23 @@ COLORS = ring(0xff0000, 0x888800, 0x00ff00, 0x008888, 0x0000ff, 0x880088)
 # colour or position, and then sends the appropriate messages to
 # the light controller process via a UDP network socket
 #
-live_loop :lights do
-  client = UDPSocket.new
-  client.connect "localhost", 9000
+##| live_loop :lights do
+#client = UDPSocket.new
+#client.connect "localhost", 9000
 
-  loop do
-    message = sync :light
-    if message[:color]
-      client.send "color " + message[:color].to_s(16), 0
-    end
-    if message[:tilt]
-      client.send "tilt " + message[:tilt].to_s, 0
-    end
-    if message[:pan]
-      client.send "pan " + message[:pan].to_s, 0
-    end
-  end
-end
+##|   loop do
+##|     message = sync :light
+##|     if message[:color]
+##|       puts "color " + message[:color].to_s(16), 0
+##|     end
+##|     if message[:tilt]
+##|       puts "tilt " + message[:tilt].to_s, 0
+##|     end
+##|     if message[:pan]
+##|       puts "pan " + message[:pan].to_s, 0
+##|     end
+##|   end
+##| end
+
+# END HERE
+
