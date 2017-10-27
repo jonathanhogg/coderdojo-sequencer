@@ -14,21 +14,22 @@
 
 # Pads 0..5 are our piano keys
 #
-#cue :pad, :number, 0
-#cue :pad, :number, 1
-#cue :pad, :number, 2
-#cue :pad, :number, 3
-#cue :pad, :number, 4
-#cue :pad, :number, 5
+#cue :pad, number: 0
+#cue :pad, number: 1
+#cue :pad, number: 2
+#cue :pad, number: 3
+#cue :pad, number: 4
+#cue :pad, number: 5
 
 # Pads 6..11 are our drum machine pads
 #
-#cue :pad, :number, 6
-#cue :pad, :number, 7
-#cue :pad, :number, 8
-#cue :pad, :number, 9
-#cue :pad, :number, 10
-#cue :pad, :number, 11
+#cue :pad, number: 6
+#cue :pad, number: 7
+#cue :pad, number: 8
+#cue :pad, number: 9
+#cue :pad, number: 10
+#cue :pad, number: 11
+
 
 # Uncomment one or more of the lines above and then run this buffer
 # to tell the sequencer to play that/those sample/note(s).
